@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Aboutus.css">
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <img class="logo" id="brandlogo" src="./img/ANTIN LOGO.png" alt="" height="80px" width="80px">
+                <script>
+                    const divlogo = document.getElementById('brandlogo');
+                    divlogo.addEventListener('click', function () {
+                        window.location.href = 'Homepage.html'});
+                </script>
+            <div class="navbutton">
+                <div style="color: rgb(255, 141, 20);">VỀ CHÚNG TÔI</div>
+                <div class="menuphuhuynh" id="services">PHỤ HUYNH
+                    <ul class="submenuphuhuynh">
+                        <li id>Tìm gia sư</li>
+                        <li>Phụ huynh cần biết</li>
+                        <li>Phụ huynh lưu ý</li>
+                        <li>Học phí gia sư</li>
+                        <li>Dịch vụ gia sư</li>
+                    </ul>
+                </div>
+                    <script>
+                        const div1 = document.getElementById('services');
+                        div1.addEventListener('click', function () {
+                            window.location.href = 'Services.html'});
+                    </script>
+                <div class="menugiasu">GIA SƯ
+                <ul class="submenugiasu">
+                    <li>Đăng ký làm gia sư</li>
+                    <li>Quy trình nhận lớp</li>
+                    <li>Giới thiệu lớp mới</li>
+                    <li>Nội quy gia sư</li>
+                    <li>Mức phí gia sư</li>
+                    <li>Hướng dẫn nhận lớp</li>
+                </ul>
+                </div>
+                <div>LỚP MỚI</div>
+                <div>LIÊN HỆ</div>
+            </div>
+            <div class="regisbutton">
+                <div class="textslide">ỨNG TUYỂN GIA SƯ</div>
+                <img class="slidingimg" src="./img/login.230x256.png" alt="" >
+            </div>
+        </div>
+    </div>
+</body>
+</html>

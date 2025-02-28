@@ -1,0 +1,182 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    position: relative;
+    overflow: hidden;
+}
+.main{
+    margin-top:5px;
+}
+.logo{
+    cursor: pointer;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbutton{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.navbutton div{
+    padding: 20px;
+    cursor: pointer;
+    transition: background-color 0.1s ease, transform 0.1s ease;
+    font-weight: bold;
+}
+.navbutton div:hover{
+    color: rgb(230, 111, 31);
+    transform: scale(1.1);
+}
+.regisbutton{
+    text-align: center;
+    margin-right: 40px;
+    background-color: rgb(1, 58, 1);
+    width: 200px;
+    padding: 10px;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.1s ease, transform 0.1s ease;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.regisbutton div{
+    display: flex;
+    position: relative;
+}
+.regisbutton:hover{
+    color: black;
+    font-weight: 550;
+    background-color: rgb(255, 141, 20);
+    transform: scale(1)
+}
+.slidingimg{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    position: absolute;
+    right: 10px;
+    opacity: 0;
+    transform: translateX(20px);
+}
+.textslide {
+    transition: transform 0.3s ease-in-out;}
+.regisbutton:hover .textslide{
+    transform: translateX(-20px);
+}
+.regisbutton:hover .slidingimg{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.logo{
+    margin-left: 32px;
+}
+.menuphuhuynh {
+    position: relative;
+    padding: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.1s ease, transform 0.1s ease;
+}
+
+/* Menu con */
+.submenuphuhuynh {
+    position: absolute;
+    top: 80%;
+    left: 0;
+    background-color: white;
+    list-style: none;
+    width: 200px;
+    padding: 0;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease-in-out;
+    
+}
+
+.submenuphuhuynh li {
+    padding: 10px 15px;
+    color: black;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+}
+
+.submenuphuhuynh li:last-child {
+    border-bottom: none;
+}
+
+.submenuphuhuynh li:hover {
+    background-color: #f0f0f0;
+    color: rgb(255, 141, 20);
+}
+
+/* Hiển thị menu khi di chuột vào */
+.menuphuhuynh:hover .submenuphuhuynh {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    z-index: 100;
+}
+.menugiasu{
+    position: relative;
+    padding: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.1s ease, transform 0.1s ease;
+}
+
+/* Menu con */
+.submenugiasu {
+    position: absolute;
+    top: 80%;
+    left: 0;
+    background-color: white;
+    list-style: none;
+    width: 200px;
+    padding: 0;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease-in-out;
+}
+
+.submenugiasu li {
+    padding: 10px 15px;
+    color: black;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+}
+
+.submenugiasu li:last-child {
+    border-bottom: none;
+}
+
+.submenugiasu li:hover {
+    background-color: #f0f0f0;
+    color: rgb(255, 141, 20);
+}
+
+/* Hiển thị menu khi di chuột vào */
+.menugiasu:hover .submenugiasu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    z-index: 101;
+}

@@ -1,0 +1,310 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    position: relative;
+    overflow-x: hidden ;
+}
+.main{
+    margin-top:5px;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbutton{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 1;
+}
+.navbutton div{
+    padding: 20px;
+    cursor: pointer;
+    transition: background-color 0.1s ease, transform 0.1s ease;
+    font-weight: bold;
+}
+.navbutton div:hover{
+    color: rgb(230, 111, 31);
+    transform: scale(1.1);
+}
+.regisbutton{
+    text-align: center;
+    margin-right: 40px;
+    background-color: rgb(1, 58, 1);
+    width: 200px;
+    padding: 10px;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.1s ease, transform 0.1s ease;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.regisbutton div{
+    display: flex;
+    position: relative;
+}
+.regisbutton:hover{
+    color: black;
+    font-weight: 550;
+    background-color: rgb(255, 141, 20);
+    transform: scale(1)
+}
+.slidingimg{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    position: absolute;
+    right: 10px;
+    opacity: 0;
+    transform: translateX(20px);
+}
+.textslide {
+    transition: transform 0.3s ease-in-out;}
+.regisbutton:hover .textslide{
+    transform: translateX(-20px);
+}
+.regisbutton:hover .slidingimg{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.logo{
+    margin-left: 32px;
+}
+.menuphuhuynh {
+    position: relative;
+    padding: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.1s ease, transform 0.1s ease;
+}
+
+/* Menu con */
+.submenuphuhuynh {
+    position: absolute;
+    top: 80%;
+    left: 0;
+    background-color: white;
+    list-style: none;
+    width: 200px;
+    padding: 0;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease-in-out;
+    
+}
+
+.submenuphuhuynh li {
+    padding: 10px 15px;
+    color: black;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+}
+
+.submenuphuhuynh li:last-child {
+    border-bottom: none;
+}
+
+.submenuphuhuynh li:hover {
+    background-color: #f0f0f0;
+    color: rgb(255, 141, 20);
+}
+
+/* Hiển thị menu khi di chuột vào */
+.menuphuhuynh:hover .submenuphuhuynh {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    z-index: 100;
+}
+.menugiasu{
+    position: relative;
+    padding: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.1s ease, transform 0.1s ease;
+}
+
+/* Menu con */
+.submenugiasu {
+    position: absolute;
+    top: 80%;
+    left: 0;
+    background-color: white;
+    list-style: none;
+    width: 200px;
+    padding: 0;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease-in-out;
+}
+
+.submenugiasu li {
+    padding: 10px 15px;
+    color: black;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+}
+
+.submenugiasu li:last-child {
+    border-bottom: none;
+}
+
+.submenugiasu li:hover {
+    background-color: #f0f0f0;
+    color: rgb(255, 141, 20);
+}
+
+/* Hiển thị menu khi di chuột vào */
+.menugiasu:hover .submenugiasu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    z-index: 101;
+}
+
+
+.main_banner{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+}
+.main_banner img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.title{
+    display: flex;
+    color: rgb(1, 58, 1);
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size:28px;
+    font-weight: bolder;
+    margin: 60px;
+    font-family: Arial, sans-serif;
+    height: 120%;
+    width: auto;text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-bottom: 5px solid #064f2f;
+    margin-left: 500px;
+    margin-right: 500px;
+    padding: 10px;
+}
+
+.coursefeatures {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 0px;
+    margin-top:60px;
+}
+.left {
+    flex: 1.75;
+    text-align: center;
+    position: relative;
+    padding-left: 60px;
+}
+.buttonleft{
+    display: flex;
+    position: absolute;
+    top:0;
+    left:45%;
+    background-color: #064f2f;
+    color: white;
+    width: 120px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    transition: background-color 0.1s ease, transform 0.1s ease;
+    cursor: pointer;
+}
+.buttonleft:hover{
+    color: rgb(5, 68, 21);
+    background-color: rgb(225, 173, 109);
+    font-weight: 600;
+    transform: scale(1.2);
+}
+.left img {
+    width: 100%;
+    max-width: 480px;
+    border-radius: 4px;
+    border-bottom: 5px solid #064f2f;
+}
+.right {
+    flex: 2;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4px;
+    row-gap: 40px;
+}
+
+.box{
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow  : 8px 8px 4px rgba(0, 0, 0, 0.1);
+    width: 220px;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 30px;
+    transition: background-color 0.1s ease, transform 0.1s ease;
+}
+.box:hover{
+    color: white;
+    background-color: #07653c;
+}
+.ri{
+    margin-left: -60px;
+}
+.le{
+    margin-left: 60px; 
+}
+.ria{
+    margin-left:-30px;
+}
+.box.green {
+    background: #07653c;
+    color: white;
+}
+
+.box h3 {
+    margin-top: 8px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+.box.right h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+.box p{
+    margin-top: 12px;
+}
+
