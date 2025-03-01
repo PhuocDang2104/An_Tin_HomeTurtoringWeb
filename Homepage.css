@@ -318,6 +318,7 @@ body {
 }
 .registration-form {
     flex: 0.5;
+    overflow-x: hidden;
     background: #07653c;
     padding: 20px;
     border-radius: 10px;
@@ -352,6 +353,7 @@ input, select, button {
 }
 input, select {
     background: white;
+    justify-content: top;
 }
 button {
     background: white;
@@ -366,7 +368,19 @@ button:hover {
     color: white;
     border: 1px solid white;
 }
-.note {
-height: 100px;
+.note-input {
+    height: 100px;
+    width: calc(100% - 10px);
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+    box-sizing: border-box;
+    background: white;
+    justify-content: top;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    overflow-y: auto;
 }
+
 

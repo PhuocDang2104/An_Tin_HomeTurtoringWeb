@@ -83,15 +83,18 @@
                 </div>
             </div>
         </div>
+        <div class="title">
+            ĐĂNG KÝ TÌM GIA SƯ CHO CON
+        </div>
         <div class="retris">
             <div class="registration-form">
-                <h2>THÔNG TIN ĐĂNG KÝ HỌC THỬ</h2>
+                <h2>THÔNG TIN ĐĂNG TÌM GIA SƯ</h2>
                 <form class="input-box">
                     <label for="name">Họ và tên học sinh*</label>
                     <input type="text" id="name" placeholder="Nhập họ và tên" required>
                     <label for="phone">Số điện thoại*</label>
                     <input type="tel" id="phone" placeholder="Nhập số điện thoại (10 số)" pattern="\d{10}" required>
-                    <label for="email">Email</label>
+                    <label for="email">Email*</label>
                     <input type="email" id="email" placeholder="Nhập email">
                     <label for="course">Chọn khóa học*</label>
                     <select id="course" required>
@@ -100,8 +103,8 @@
                         <option value="ly">Vật Lý</option>
                         <option value="hoa">Hóa Học</option>
                     </select>
-                    <label for="note">Ghi chú thêm</label>
-                    <input class="" type="text" id="note" placeholder="Nhập nội dung" required>
+                    <label for="note">Ghi chú thêm*</label>
+                    <div class="note-input" contenteditable="true" type="text" id="note" placeholder="Nhập nội dung" required></div>
                     <button type="submit">Đăng ký</button>
                 </form>
             </div>
