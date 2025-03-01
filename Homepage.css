@@ -308,3 +308,65 @@ body {
     margin-top: 12px;
 }
 
+.retris{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 0px;
+    margin-top:60px;
+}
+.registration-form {
+    flex: 0.5;
+    background: #07653c;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-right: 50px;
+    margin-left: 200px;
+}
+.retris-img{
+    flex: 1;
+    margin-left: 50px;
+}
+h2 {
+    color: white;
+}
+label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    margin-top: 10px;
+    color: white;
+}
+
+input, select, button {
+    width: calc(100% - 10px);
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+    box-sizing: border-box;
+}
+input, select {
+    background: white;
+}
+button {
+    background: white;
+    color: #f97316;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+}
+button:hover {
+    background: #f97316;
+    color: white;
+    border: 1px solid white;
+}
+.note {
+height: 100px;
+}
+
