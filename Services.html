@@ -2,40 +2,76 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=\, initial-scale=1.0">
-    <link rel="stylesheet" href="Services.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="HPgiasu.css">
 </head>
 <body>
     <div class="main">
         <div class="navbar">
-            <img class="logo" id="brandlogo" src="./img/ANTIN LOGO.png" alt="" height="80px" width="80px">
-                <script>
-                    const divlogo = document.getElementById('brandlogo');
-                    divlogo.addEventListener('click', function () {
-                        window.location.href = 'index.html'});
-                </script>
+            <img class="logo" src="./img/ANTIN LOGO.png" alt="" height="80px" width="80px">
             <div class="navbutton">
                 <div id="aboutus">VỀ CHÚNG TÔI</div>
-                    <script>
-                        const div = document.getElementById('aboutus');
-                        div.addEventListener('click', function () {
-                            window.location.href = 'Aboutus.html'});
-                    </script>
-                <div class="menuphuhuynh" id="services" style="color: rgb(255, 141, 20);">PHỤ HUYNH
+                <script>
+                    const div = document.getElementById('aboutus');
+                    div.addEventListener('click', function () {
+                        window.location.href = 'Aboutus.html'});
+                </script>
+                <div class="menuphuhuynh" id="services" style="color: rgb(230, 111, 31);">PHỤ HUYNH
                     <ul class="submenuphuhuynh">
-                        <li id>Tìm gia sư</li>
-                        <li>Phụ huynh cần biết</li>
-                        <li>Phụ huynh lưu ý</li>
-                        <li>Học phí gia sư</li>
-                        <li>Dịch vụ gia sư</li>
+                        <li id="ph-timgiasu" id>Tìm gia sư</li>
+                        <script>
+                            // Điều hướng khi click vào "PHỤ HUYNH"
+                            const divPhuHuynh = document.getElementById('services');
+                            divPhuHuynh.addEventListener('click', function () {
+                                window.location.href = 'Services.html';
+                            });
+                    
+                            // Điều hướng khi click vào "Tìm gia sư"
+                            const divTimGiaSu = document.getElementById('ph-timgiasu');
+                            divTimGiaSu.addEventListener('click', function (event) {
+                            event.stopPropagation();    
+                            window.location.href = 'Timgiasu.html';
+                            });
+                        </script>
+                        <li id="ph-canbiet">Phụ huynh cần biết</li>
+                        <script>
+                            // Điều hướng khi click vào "Phụ huynh cần biết"
+                            const divPHcanbiet = document.getElementById('ph-canbiet');
+                            divPHcanbiet.addEventListener('click', function (event) {
+                            event.stopPropagation();    
+                            window.location.href = 'PHcanbiet.html';
+                            });
+                        </script>
+                        <li id="ph-canbiet2">Phụ huynh lưu ý</li>
+                        <script>
+                            // Điều hướng khi click vào "Phụ huynh cần biết"
+                            const divPHcanbiet2 = document.getElementById('ph-canbiet2');
+                            divPHcanbiet2.addEventListener('click', function (event) {
+                            event.stopPropagation();    
+                            window.location.href = 'PHcanbiet.html';
+                            });
+                        </script>
+                        <li id="hp-giasu">Học phí gia sư</li>
+                        <script>
+                            // Điều hướng khi click vào "Phụ huynh cần biết"
+                            const divHPgiasu = document.getElementById('hp-giasu');
+                            divHPgiasu.addEventListener('click', function (event) {
+                            event.stopPropagation();    
+                            window.location.href = 'HPgiasu.html';
+                            });
+                        </script>
+                        <li id="dv-giasu">Dịch vụ gia sư</li>
+                        <script>
+                            // Điều hướng khi click vào "Phụ huynh cần biết"
+                            const divHPgiasu2 = document.getElementById('dv-giasu');
+                            divHPgiasu2.addEventListener('click', function (event) {
+                            event.stopPropagation();    
+                            window.location.href = 'HPgiasu.html';
+                            });
+                        </script>
                     </ul>
                 </div>
-                    <script>
-                        const div1 = document.getElementById('services');
-                        div1.addEventListener('click', function () {
-                            window.location.href = 'Services.html'});
-                    </script>
                 <div class="menugiasu">GIA SƯ
                 <ul class="submenugiasu">
                     <li>Đăng ký làm gia sư</li>

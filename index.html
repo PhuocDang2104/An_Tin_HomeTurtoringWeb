@@ -30,14 +30,46 @@
                             // Điều hướng khi click vào "Tìm gia sư"
                             const divTimGiaSu = document.getElementById('ph-timgiasu');
                             divTimGiaSu.addEventListener('click', function (event) {
-                                event.stopPropagation(); // Ngăn chặn sự kiện click lan lên "PHỤ HUYNH"
-                                window.location.href = 'Timgiasu.html';
+                            event.stopPropagation();    
+                            window.location.href = 'Timgiasu.html';
                             });
                         </script>
-                        <li>Phụ huynh cần biết</li>
-                        <li>Phụ huynh lưu ý</li>
-                        <li>Học phí gia sư</li>
-                        <li>Dịch vụ gia sư</li>
+                        <li id="ph-canbiet">Phụ huynh cần biết</li>
+                        <script>
+                            // Điều hướng khi click vào "Phụ huynh cần biết"
+                            const divPHcanbiet = document.getElementById('ph-canbiet');
+                            divPHcanbiet.addEventListener('click', function (event) {
+                            event.stopPropagation();    
+                            window.location.href = 'PHcanbiet.html';
+                            });
+                        </script>
+                        <li id="ph-canbiet2">Phụ huynh lưu ý</li>
+                        <script>
+                            // Điều hướng khi click vào "Phụ huynh cần biết"
+                            const divPHcanbiet2 = document.getElementById('ph-canbiet2');
+                            divPHcanbiet2.addEventListener('click', function (event) {
+                            event.stopPropagation();    
+                            window.location.href = 'PHcanbiet.html';
+                            });
+                        </script>
+                        <li id="hp-giasu">Học phí gia sư</li>
+                        <script>
+                            // Điều hướng khi click vào "Phụ huynh cần biết"
+                            const divHPgiasu = document.getElementById('hp-giasu');
+                            divHPgiasu.addEventListener('click', function (event) {
+                            event.stopPropagation();    
+                            window.location.href = 'HPgiasu.html';
+                            });
+                        </script>
+                        <li id="dv-giasu">Dịch vụ gia sư</li>
+                        <script>
+                            // Điều hướng khi click vào "Phụ huynh cần biết"
+                            const divHPgiasu2 = document.getElementById('dv-giasu');
+                            divHPgiasu2.addEventListener('click', function (event) {
+                            event.stopPropagation();    
+                            window.location.href = 'HPgiasu.html';
+                            });
+                        </script>
                     </ul>
                 </div>
                 <div class="menugiasu">GIA SƯ
