@@ -19,18 +19,27 @@
                 </script>
                 <div class="menuphuhuynh" id="services">PHỤ HUYNH
                     <ul class="submenuphuhuynh">
-                        <li id>Tìm gia sư</li>
+                        <li id="ph-timgiasu" id>Tìm gia sư</li>
+                        <script>
+                            // Điều hướng khi click vào "PHỤ HUYNH"
+                            const divPhuHuynh = document.getElementById('services');
+                            divPhuHuynh.addEventListener('click', function () {
+                                window.location.href = 'Services.html';
+                            });
+                    
+                            // Điều hướng khi click vào "Tìm gia sư"
+                            const divTimGiaSu = document.getElementById('ph-timgiasu');
+                            divTimGiaSu.addEventListener('click', function (event) {
+                                event.stopPropagation(); // Ngăn chặn sự kiện click lan lên "PHỤ HUYNH"
+                                window.location.href = 'Timgiasu.html';
+                            });
+                        </script>
                         <li>Phụ huynh cần biết</li>
                         <li>Phụ huynh lưu ý</li>
                         <li>Học phí gia sư</li>
                         <li>Dịch vụ gia sư</li>
                     </ul>
                 </div>
-                    <script>
-                        const div1 = document.getElementById('services');
-                        div1.addEventListener('click', function () {
-                            window.location.href = 'Services.html'});
-                    </script>
                 <div class="menugiasu">GIA SƯ
                 <ul class="submenugiasu">
                     <li>Đăng ký làm gia sư</li>
@@ -117,7 +126,7 @@
         </div>
         <div class="retris" id="tutor-retris">
             <div class="registration-form">
-                <h2>THÔNG TIN ĐĂNG TÌM GIA SƯ</h2>
+                <h2>THÔNG TIN ĐĂNG KÝ TÌM GIA SƯ</h2>
                 <form class="input-box">
                     <label for="name">Họ và tên học sinh*</label>
                     <input type="text" id="name" placeholder="Nhập họ và tên" required>

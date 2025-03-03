@@ -28,6 +28,7 @@ body {
     transition: background-color 0.1s ease, transform 0.1s ease;
     font-weight: bold;
 }
+
 .navbutton div:hover{
     color: rgb(230, 111, 31);
     transform: scale(1.1);
@@ -319,7 +320,7 @@ body {
     margin-top:60px;
 }
 .registration-form {
-    flex: 0.5;
+    flex: 0.6;
     overflow-x: hidden;
     background: #07653c;
     padding: 20px;
