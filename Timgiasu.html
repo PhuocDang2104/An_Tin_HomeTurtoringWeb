@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="HPgiasu.css">
+    <link rel="stylesheet" href="Timgiasu.css">
 </head>
 <body>
     <div class="main">
         <div class="navbar">
-            <img class="logo" src="./img/ANTIN LOGO.png" alt="" height="80px" width="80px">
+            <img class="logo" id="brandlogo" src="./img/ANTIN LOGO.png" alt="" height="80px" width="80px">
+            <script>
+                // Điều hướng khi click vào logo
+                const divlogo = document.getElementById('brandlogo');
+                divlogo.addEventListener('click', function () {
+                    window.location.href = 'index.html'});
+            </script>
             <div class="navbutton">
                 <div id="aboutus">VỀ CHÚNG TÔI</div>
                 <script>
@@ -89,6 +95,116 @@
                 <div class="textslide">ỨNG TUYỂN GIA SƯ</div>
                 <img class="slidingimg" src="./img/login.230x256.png" alt="" >
             </div>
+        </div>
+        <div class="dangky">
+            <h2> ĐĂNG KÝ TÌM GIA SƯ</h2>
+            <form action="#" method="POST"> <!-- dữ liệu được gửi đến API -->
+                <div class="form_group">
+                    <label>Họ tên:</label>
+                    <input type="text" name="hoten" placeholder="Nhập họ và tên" required>
+                </div>
+    
+                <div class="form_group">
+                    <label>Địa chỉ:</label>
+                    <input type="text" name="diachi" placeholder="Nhập đầy đủ địa chỉ" required>
+                </div>
+    
+                <div class="form_group">
+                    <label>Điện thoại:</label>
+                    <input type="text" name="dienthoai" placeholder="Nhập số điện thoại (10 số)" pattern="\d{10}" required>
+                </div>
+    
+                <div class="form_group">
+                    <label>Email:</label>
+                    <input type="email" name="email" placeholder="email" required>
+                </div>
+    
+                <div class="form_group">
+                    <label>Lớp:</label>
+                    <select id="chonlop" aria-placeholder="Chọn trình độ học sinh" name="lop">
+                        <option value="Lớp 1">Lớp 1</option>
+                        <option value="Lớp 2">Lớp 2</option>
+                        <option value="Lớp 3">Lớp 3</option>
+                        <option value="Lớp 4">Lớp 4</option>
+                        <option value="Lớp 5">Lớp 5</option>
+                        <option value="Lớp 6">Lớp 6</option>
+                        <option value="Lớp 7">Lớp 7</option>
+                        <option value="Lớp 8">Lớp 8</option>
+                        <option value="Lớp 9">Lớp 9</option>
+                        <option value="Lớp 10">Lớp 10</option>
+                        <option value="Lớp 11">Lớp 11</option>
+                        <option value="Lớp 12">Lớp 12</option>
+                        <option value="Đại học">Đại học</option>
+                        <option value="Lớp tích hợp">Lớp tích hợp</option>
+                        <option value="Lớp năng khiếu">Lớp năng khiếu</option>
+                        <option value="Lớp khác">Lớp khác</option>
+                        <option value="Lớp Online">Lớp Online</option>
+                    </select>
+                </div>
+    
+                <div class="form_group">
+                    <label>Môn học:</label>
+                    <input type="text" name="monhoc" placeholder="Ví dụ: toán, lý, hóa..." required>
+                </div>
+    
+                <div class="form_group">
+                    <label>Số lượng học sinh:</label>
+                    <input type="number" name="soluong" required>
+                </div>
+    
+                <div class="form_group">
+                    <label>Học lực hiện tại:</label>
+                    <input type="text" name="hocluc" required>
+                </div>
+    
+                <div class="form_group">
+                    <label>Số buổi:</label>
+                    <select name="sobuoi">
+                        <option value="1 buổi">1 buổi</option>
+                        <option value="2 buổi">2 buổi</option>
+                        <option value="3 buổi">3 buổi</option>
+                    </select>  / tuần
+                </div class="form_group">
+    
+                <div class="form_group">
+                    <label>Thời gian học:</label>
+                    <input type="text" name="thoigianhoc" placeholder="Ví dụ: T2 - T4 - T6; 15h - 17h">
+                </div>
+    
+                <div class="form_group">
+                    <label>Yêu cầu:</label>
+                    <select name="yeucau">
+                        <option value="">-Chọn yêu cầu-</option>
+                        <option value="Sinh viên">Sinh viên </option>
+                        <option value="Sinh viên nam">Sinh viên nam</option>
+                        <option value="Sinh viên nữ">Sinh viên nữ</option>
+                        <option value="Giáo viên">Giáo viên</option>
+                        <option value="Giáo viên nam">Giáo viên nam</option>
+                        <option value="Giáo viên nữ">Giáo viên nữ</option>
+                        <option value="Cử nhân">Cử nhân</option>
+                        <option value="Thạc sỹ">Thạc sỹ</option>
+                        <option value="Tiến sĩ">Tiến sĩ</option>
+                    </select>
+                </div>
+    
+                <div class="form_group">
+                    <label>Mã số gia sư đã chọn:</label>
+                    <input type="text" name="magiasu" placeholder="Ví dụ: Mã số 13, 23,...">
+                    <a href="#">Chọn gia sư tại đây</a> <!-- chọn đường link trong trang gia sư tiêu biểu -->
+                </div>
+    
+                <div class="form_group">
+                    <label>Yêu cầu khác:</label>
+                    <textarea name="yeucaukhac"></textarea>
+                </div>
+    
+                <div class="form_group">
+                    <label>Mã bảo vệ:</label>
+                    <input type="text" name="captcha" required>
+                </div>
+    
+                <button type="submit">Đăng ký</button>
+            </form>
         </div>
     </div>
 </body>

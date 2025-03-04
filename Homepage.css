@@ -79,6 +79,10 @@ body {
     transform: translateX(0);
 }
 
+.retris-img{
+    margin-right: 50px;
+
+}
 .logo{
     margin-left: 32px;
 }
@@ -328,7 +332,7 @@ body {
     width: 400px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
-    margin-right: 50px;
+    margin-right: 10px;
     margin-left: 200px;
 }
 .retris-img{
