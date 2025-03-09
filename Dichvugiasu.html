@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Dichvugiasu.css">
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <img class="logo" id="brandlogo" src="./img/ANTIN LOGO.png" alt="" height="80px" width="80px">
+            <script>
+                // Điều hướng khi click vào logo
+                const divlogo = document.getElementById('brandlogo');
+                divlogo.addEventListener('click', function () {
+                    window.location.href = 'index.html'});
+            </script>
+            <div class="navbutton">
+                <div id="aboutus">VỀ CHÚNG TÔI</div>
+                <script>
+                    const div = document.getElementById('aboutus');
+                    div.addEventListener('click', function () {
+                        window.location.href = 'Aboutus.html'});
+                </script>
+                <div class="menuphuhuynh" id="services" style="color: rgb(230, 111, 31);">PHỤ HUYNH
+                    <ul class="submenuphuhuynh">
+                        <li id="ph-timgiasu" id>Tìm gia sư</li>
+                        <script>
+                            // Điều hướng khi click vào "PHỤ HUYNH"
+                            const divPhuHuynh = document.getElementById('services');
+                            divPhuHuynh.addEventListener('click', function () {
+                                window.location.href = 'Services.html';
+                            });
+                    
+                            // Điều hướng khi click vào "Tìm gia sư"
+                            const divTimGiaSu = document.getElementById('ph-timgiasu');
+                            divTimGiaSu.addEventListener('click', function (event) {
+                            event.stopPropagation();    
+                            window.location.href = 'Timgiasu.html';
+                            });
+                        </script>
+                        <li id="ph-canbiet">Phụ huynh cần biết</li>
+                        <script>
+                            // Điều hướng khi click vào "Phụ huynh cần biết"
+                            const divPHcanbiet = document.getElementById('ph-canbiet');
+                            divPHcanbiet.addEventListener('click', function (event) {
+                            event.stopPropagation();    
+                            window.location.href = 'PHcanbiet.html';
+                            });
+                        </script>
+                        <li id="ph-canbiet2">Phụ huynh lưu ý</li>
+                        <script>
+                            // Điều hướng khi click vào "Phụ huynh cần biết"
+                            const divPHcanbiet2 = document.getElementById('ph-canbiet2');
+                            divPHcanbiet2.addEventListener('click', function (event) {
+                            event.stopPropagation();    
+                            window.location.href = 'PHluuy.html';
+                            });
+                        </script>
+                        <li id="hp-giasu">Học phí gia sư</li>
+                        <script>
+                            // Điều hướng khi click vào "Phụ huynh cần biết"
+                            const divHPgiasu = document.getElementById('hp-giasu');
+                            divHPgiasu.addEventListener('click', function (event) {
+                            event.stopPropagation();    
+                            window.location.href = 'HPgiasu.html';
+                            });
+                        </script>
+                        <li id="dv-giasu">Dịch vụ gia sư</li>
+                        <script>
+                            // Điều hướng khi click vào "Phụ huynh cần biết"
+                            const divHPgiasu2 = document.getElementById('dv-giasu');
+                            divHPgiasu2.addEventListener('click', function (event) {
+                            event.stopPropagation();    
+                            window.location.href = 'HPgiasu.html';
+                            });
+                        </script>
+                    </ul>
+                </div>
+                <div class="menugiasu">GIA SƯ
+                <ul class="submenugiasu">
+                    <li>Đăng ký làm gia sư</li>
+                    <li>Quy trình nhận lớp</li>
+                    <li>Giới thiệu lớp mới</li>
+                    <li>Nội quy gia sư</li>
+                    <li>Mức phí gia sư</li>
+                    <li>Hướng dẫn nhận lớp</li>
+                </ul>
+                </div>
+                <div>LỚP MỚI</div>
+                <div>LIÊN HỆ</div>
+            </div>
+            <div class="regisbutton">
+                <div class="textslide">ỨNG TUYỂN GIA SƯ</div>
+                <img class="slidingimg" src="./img/login.230x256.png" alt="" >
+            </div>
+        </div>
+        <div class="noidung">
+            <h2 class="tieude">Dịch vụ gia sư</h2>
+           
+            <ol>
+                <li class="tieudephu">Đối Tượng Học Viên</li>
+                <p class="vanban">Học sinh tiểu học cần rèn chữ đẹp, chính tả, phát triển tư duy toán học, củng cố kiến thức nền tảng. </p>
+                <p class="vanban">Học sinh THCS, THPT muốn cải thiện điểm số, học tập có phương pháp để đạt thành tích cao hơn. </p>
+                <p class="vanban">Học sinh luyện thi chuyển cấp vào các trường chuyên, lớp chọn. </p>
+                <p class="vanban">Học sinh ôn thi tốt nghiệp THPT, luyện thi đại học các khối A, A1, B, C, D, D1,... </p>
+                <p class="vanban">Học viên cần luyện thi chứng chỉ tiếng Anh (IELTS, TOEIC, TOEFL), tiếng Trung (HSK), tiếng Nhật (JLPT), tiếng Hàn (TOPIK),... </p>
+                <p class="vanban">Người lớn muốn học ngoại ngữ, tin học, kỹ năng mềm phục vụ công việc và cuộc sống.  </p>
+            
+                <li class="tieudephu">Hình Thức Giảng Dạy</li>
+                <p class="vanban"><strong>Gia sư tại nhà:</strong> Gia sư đến trực tiếp giảng dạy theo lịch hẹn, đảm bảo học viên được theo sát tiến độ học tập.  </p>
+                <p class="vanban"><strong>Gia sư trực tuyến:</strong> Học online qua Zoom, Google Meet với giáo trình linh hoạt, tiết kiệm thời gian di chuyển mà vẫn đảm bảo chất lượng.  </p>
+                <p class="vanban"><strong>Dạy nhóm nhỏ (2-5 học viên):</strong> Tăng cường tương tác, trao đổi và học tập hiệu quả hơn.  </p>
+                
+                <li class="tieudephu">Chương Trình Giảng Dạy </li>
+                <p class="vanban"><strong>Củng cố & nâng cao kiến thức theo chương trình học</strong>  </p>
+                <ul class="mucnho">
+                    <li class="kiemtragiasu">Toán - Lý - Hóa - Văn - Anh - Sinh - Sử - Địa từ lớp 1 đến 12.</li>
+                    <li class="kiemtragiasu">Hỗ trợ học sinh tiếp cận phương pháp học tập hiệu quả, phát triển tư duy logic. </li>
+                </ul>
+                <p class="vanban"><strong>Luyện thi chuyển cấp & Đại học </strong>  </p>
+                <ul class="mucnho">
+                    <li class="kiemtragiasu">Ôn thi vào lớp 6, lớp 10 các trường chuyên, lớp chọn. </li>
+                    <li class="kiemtragiasu">Luyện thi THPT Quốc gia các khối A, A1, B, C, D, D1,...  </li>
+                    <li class="kiemtragiasu">Hỗ trợ lập kế hoạch học tập theo từng giai đoạn, bám sát đề thi thực tế.   </li>
+                </ul>
+                <p class="vanban"><strong>Ngoại ngữ & Luyện thi chứng chỉ quốc tế </strong>  </p>
+                <ul class="mucnho">
+                    <li class="kiemtragiasu">Tiếng Anh (IELTS, TOEIC, TOEFL, giao tiếp, phát âm chuẩn, tiếng Anh trẻ em). </li>
+                    <li class="kiemtragiasu">Tiếng Trung (HSK, giao tiếp, viết chữ Hán).  </li>
+                    <li class="kiemtragiasu">Tiếng Nhật (JLPT, Kaiwa, Kanji).   </li>
+                    <li class="kiemtragiasu">Tiếng Hàn (TOPIK, giao tiếp thực tế).    </li>
+                </ul>
+                <p class="vanban"><strong>Môn năng khiếu & kỹ năng mềm </strong>  </p>
+                <ul class="mucnho">
+                    <li class="kiemtragiasu">Tin học văn phòng (Word, Excel, PowerPoint), lập trình cơ bản cho trẻ em.  </li>
+                    <li class="kiemtragiasu">Dạy đàn piano, guitar, vẽ tranh, rèn chữ đẹp.   </li>
+                    <li class="kiemtragiasu">Rèn luyện kỹ năng thuyết trình, tư duy phản biện cho học sinh.   </li>
+                </ul>
+
+                <li class="tieudephu">Phương Pháp Giảng Dạy Hiệu Quả</li>
+                <p class="vanban">Học phí cần được thống nhất rõ ràng với trung tâm trước khi bắt đầu lớp học.  </p>
+                <p class="vanban">Nếu có vấn đề về chất lượng giảng dạy, phụ huynh có thể liên hệ trung tâm để đổi gia sư hoặc được hỗ trợ.  </p>
+                
+                <li class="tieudephu">Giám sát quá trình học tập</li>
+                <p class="vanban"><strong>Kiểm tra trình độ đầu vào:</strong> Đánh giá năng lực học sinh, từ đó thiết kế lộ trình học tập phù hợp. </p>
+                <p class="vanban"><strong>Kèm sát từng học viên:</strong> Gia sư hướng dẫn chi tiết, giúp học viên hiểu bài và ứng dụng thực tế. </p>
+                <p class="vanban"><strong>Hệ thống bài tập & kiểm tra định kỳ:</strong> Giúp học viên quen với cấu trúc đề thi, tự tin làm bài. </p>
+                <p class="vanban"><strong>Ứng dụng công nghệ vào giảng dạy:</strong> Tích hợp học liệu điện tử, phần mềm hỗ trợ học tập.  </p>
+
+                <li class="tieudephu">Cam Kết Của Trung Tâm</li>
+                <p class="camket">Trung tâm hoạt động với tiêu chí <strong>Uy Tín - Chất Lượng - Tận Tâm</strong>, đặt lợi ích của học viên lên hàng đầu.  </p>
+                <p class="camket">Phối hợp với phụ huynh trong suốt quá trình học để đảm bảo chất lượng giảng dạy.  </p>
+                <p class="camket">Kiểm soát đội ngũ gia sư, thay đổi ngay nếu có phản hồi không phù hợp.  </p>
+                <p class="camket">Hỗ trợ tư vấn chọn gia sư phù hợp với trình độ của học sinh.   </p>
+                <p class="camket">Theo dõi tiến độ học tập để có phương pháp điều chỉnh kịp thời.    </p>
+            </ol>
+        
+        </div>
+    </div>
+</body>
+</html>

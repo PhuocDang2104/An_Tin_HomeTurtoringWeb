@@ -4,7 +4,7 @@ body {
   background-color: #ffffff;
   color: rgb(0, 0, 0);
   position: relative;
-  overflow: hidden;
+  overflow: auto;
 }
 .main {
   margin-top: 5px;
@@ -179,4 +179,86 @@ body {
   visibility: visible;
   transform: translateY(0);
   z-index: 101;
+}
+
+.tieude {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  font-family: Arial, sans-serif;
+  font-size: 30px;
+  padding: 10px;
+  background: #07653c;
+  color: white;
+  margin-left: 650px;
+  margin-right: 650px;
+  border-radius: 20px;
+}
+
+.tieudephu {
+  counter-reset: my-counter; /*tạo bộ đếm số*/
+  list-style: none; /* Xóa số mặc định */
+  font-size: 20px; /* Để số thứ tự có kích thước lớn như h2 */
+  font-weight: bold;
+  position: relative;
+  padding-left: 50px;
+  margin-bottom: 20px;
+  margin-top: 60px;
+}
+
+.tieudephu::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px; /* Điều chỉnh kích thước icon */
+  height: 24px;
+  background-image: url("img/star.png"); /* Link ảnh */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.vanban,
+.camket {
+  position: relative;
+  padding-left: 35px;
+  margin-left: 380px;
+
+}
+
+.vanban::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px; /* Điều chỉnh kích thước icon */
+  height: 15px;
+  background-image: url("img/green arrow.png"); /* Link ảnh */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.camket::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px; /* Điều chỉnh kích thước icon */
+  height: 20px;
+  background-image: url("img/green\ tick.png"); /* Link ảnh */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.tieudephu,
+.kiemtragiasu {
+  margin-left: 450px;
+}
+
+.kiemtragiasu {
+  padding: 7px;
 }

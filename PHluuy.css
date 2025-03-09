@@ -202,7 +202,8 @@ body {
     font-weight: bold;
     position: relative;
     padding-left: 50px;
-    line-height: 50px;
+    margin-bottom: 20px;
+    margin-top: 60px;
 }
 
 .tieudephu::before {
@@ -222,7 +223,7 @@ body {
 .vanban {
     position: relative;
     padding-left: 35px;
-    margin-left: 350px ;
+    margin-left: 380px ;
 }
 
 .vanban::before {
@@ -239,7 +240,7 @@ body {
 }
 
 .tieudephu, .kiemtragiasu {
-    margin-left: 400px ;
+    margin-left: 450px ;
 
 }
 
