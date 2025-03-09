@@ -13,10 +13,12 @@ body {
   cursor: pointer;
 }
 .navbar {
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  z-index: 1000;
 }
 .navbutton {
   display: flex;
@@ -107,6 +109,7 @@ body {
   visibility: hidden;
   transform: translateY(-10px);
   transition: all 0.3s ease-in-out;
+  z-index: 999;
 }
 
 .submenuphuhuynh li {
