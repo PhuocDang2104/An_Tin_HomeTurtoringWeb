@@ -180,13 +180,19 @@ body {
     z-index: 101;
 }
 
+.noidung{ /* Tạo bg cho trang */
+    background: url('img/bg2.png') no-repeat center top;
+    background-size: cover;
+    background-position: center + 30px;
+}
+
 .tieude {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 45px;
     font-family: Arial, sans-serif;
-    font-size:30px ;
+    font-size:32px ;
     background: #07653c;
     color: white;
     padding: 5px;
@@ -198,7 +204,7 @@ body {
 .tieudephu {
     counter-reset: my-counter; /*tạo bộ đếm số*/
     list-style: none; /* Xóa số mặc định */
-    font-size: 20px; /* Để số thứ tự có kích thước lớn như h2 */
+    font-size: 30px; /* Để số thứ tự có kích thước lớn như h2 */
     font-weight: bold;
     position: relative;
     padding-left: 50px;
@@ -221,9 +227,10 @@ body {
 }
 
 .vanban {
+    font-size: 20px ;
     position: relative;
     padding-left: 35px;
-    margin-left: 380px ;
+    margin-left: 300px ;
 }
 
 .vanban::before {
@@ -240,10 +247,11 @@ body {
 }
 
 .tieudephu, .kiemtragiasu {
-    margin-left: 450px ;
+    margin-left: 380px ;
 
 }
 
 .kiemtragiasu {
+    font-size: 20px;
     padding: 7px;
 }

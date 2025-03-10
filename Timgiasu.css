@@ -180,6 +180,12 @@ body {
     z-index: 101;
 }
 
+.noidung {  /* Tạo bg cho trang */
+    background: url('img/bg2.png') no-repeat center top;
+    background-size: cover;
+    background-position: center + 30px;
+}
+
 .dangky {
     background: white;
     padding: 20px;
